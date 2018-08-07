@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace consoleApp
 {
-    public class Program
+    public class User
     {
-        static void Main(string[] args)
-        {
-        }
+        public string FirstName { get; set; }
+        public string LastName { get; set;  }
     }
 }
