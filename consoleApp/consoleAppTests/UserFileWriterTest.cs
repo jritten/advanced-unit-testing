@@ -7,7 +7,7 @@ namespace consoleAppTests
     [TestClass]
     public class UserFileWriterTest
     {
-        public static TestContext TestContext { get; set; }
+        public TestContext TestContext { get; set; }
         [TestMethod]
         [DeploymentItem("TestFile.txt")]
         public void TestMethod1()
@@ -18,7 +18,6 @@ namespace consoleAppTests
             var content = File.ReadAllText(pathToFile);
             Assert.AreEqual("This is a test", content);
 
-        
         }
     }
 }
